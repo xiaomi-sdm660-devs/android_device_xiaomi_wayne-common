@@ -27,14 +27,8 @@
 
 WAYNE_PATH := device/xiaomi/wayne-common
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := wayne
-
 # Kernel
 TARGET_KERNEL_CONFIG := wayne_defconfig
-
-# Security patch level
-VENDOR_SECURITY_PATCH := 2018-11-01
 
 # Inherit the proprietary files
 -include vendor/xiaomi/wayne-common/BoardConfigVendor.mk
