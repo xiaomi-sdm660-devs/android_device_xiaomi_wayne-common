@@ -47,7 +47,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.device.rc
 
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
