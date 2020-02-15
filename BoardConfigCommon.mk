@@ -30,5 +30,12 @@ WAYNE_PATH := device/xiaomi/wayne-common
 # Kernel
 TARGET_KERNEL_CONFIG := wayne_defconfig
 
+# Recovery
+ifeq ($(AB_OTA_UPDATER), true)
+TARGET_RECOVERY_FSTAB := $(WAYNE_PATH)/rootdir/etc/fstab_AB.qcom
+else
+TARGET_RECOVERY_FSTAB := $(WAYNE_PATH)/rootdir/etc/fstab.qcom
+endif
+
 # Inherit the proprietary files
 -include vendor/xiaomi/wayne-common/BoardConfigVendor.mk
