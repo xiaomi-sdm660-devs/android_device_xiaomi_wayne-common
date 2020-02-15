@@ -34,6 +34,10 @@ TARGET_KERNEL_CONFIG := wayne_defconfig
 DEVICE_MANIFEST_FILE += $(WAYNE_PATH)/configs/manifests/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(WAYNE_PATH)/configs/manifests/vendor_framework_compatibility_matrix.xml
 
+# Partitions
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
+BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
+
 # Recovery
 ifeq ($(AB_OTA_UPDATER), true)
 TARGET_RECOVERY_FSTAB := $(WAYNE_PATH)/rootdir/etc/fstab_AB.qcom
