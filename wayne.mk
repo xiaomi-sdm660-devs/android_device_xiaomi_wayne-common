@@ -53,5 +53,10 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.device.rc
 
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(WAYNE_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    $(WAYNE_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
