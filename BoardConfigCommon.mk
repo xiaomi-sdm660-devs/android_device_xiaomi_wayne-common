@@ -30,6 +30,10 @@ WAYNE_PATH := device/xiaomi/wayne-common
 # Kernel
 TARGET_KERNEL_CONFIG := wayne_defconfig
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(WAYNE_PATH)/configs/manifests/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(WAYNE_PATH)/configs/manifests/vendor_framework_compatibility_matrix.xml
+
 # Recovery
 ifeq ($(AB_OTA_UPDATER), true)
 TARGET_RECOVERY_FSTAB := $(WAYNE_PATH)/rootdir/etc/fstab_AB.qcom
