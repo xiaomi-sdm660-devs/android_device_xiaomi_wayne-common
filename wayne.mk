@@ -34,6 +34,9 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 # Inherit proprietary files
 $(call inherit-product, vendor/xiaomi/wayne-common/wayne-common-vendor.mk)
 
+# Inherit properties
+$(call inherit-product, $(WAYNE_PATH)/properties.mk)
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(WAYNE_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
