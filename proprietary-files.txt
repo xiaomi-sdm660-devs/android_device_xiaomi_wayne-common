@@ -733,9 +733,42 @@ vendor/lib/libmmcamera_isp_sce40.so
 vendor/lib/libmmcamera_isp_snr47.so
 vendor/lib/libmmcamera_isp_sub_module.so
 
+# Consumerir - from jasmine
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
+
 # Display Calibration - from jasmine
 vendor/etc/qdcm_calib_data_tianma_nt36672_fhd_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_jdi_nt36672_fhd_video_mode_dsi_panel.xml
+
+# Fingerprint firmware - from jasmine
+etc/firmware/goodixfp.b00
+etc/firmware/goodixfp.b01
+etc/firmware/goodixfp.b02
+etc/firmware/goodixfp.b03
+etc/firmware/goodixfp.b04
+etc/firmware/goodixfp.b05
+etc/firmware/goodixfp.b06
+etc/firmware/goodixfp.b07
+etc/firmware/goodixfp.mdt
+vendor/firmware/fpctzappfingerprint.b00
+vendor/firmware/fpctzappfingerprint.b01
+vendor/firmware/fpctzappfingerprint.b02
+vendor/firmware/fpctzappfingerprint.b03
+vendor/firmware/fpctzappfingerprint.b04
+vendor/firmware/fpctzappfingerprint.b05
+vendor/firmware/fpctzappfingerprint.b06
+vendor/firmware/fpctzappfingerprint.b07
+vendor/firmware/fpctzappfingerprint.mdt
+
+# Graphics firmware - from jasmine
+vendor/firmware/a512_zap.b00
+vendor/firmware/a512_zap.b01
+vendor/firmware/a512_zap.b02
+vendor/firmware/a512_zap.elf
+vendor/firmware/a512_zap.mdt
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
+vendor/firmware/a540_gpmu.fw2
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -748,3 +781,31 @@ vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
+
+# Keystore - from jasmine
+vendor/lib/hw/keystore.sdm660.so
+vendor/lib64/hw/keystore.sdm660.so
+
+# Sensors - from jasmine
+vendor/bin/sensors.qti
+vendor/lib/hw/activity_recognition.sdm660.so
+vendor/lib/libsensor_reg.so
+vendor/lib/libsensor1.so
+vendor/lib/sensors.ssc.so
+vendor/lib64/hw/activity_recognition.sdm660.so
+vendor/lib64/libsensor_reg.so
+vendor/lib64/libsensor1.so
+vendor/lib64/sensors.ssc.so
+
+# Thermal - from LA.UM.8.2.r1-04000-sdm660.0
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+vendor/bin/thermal-engine|5b0deee2f319843c32b41be26ec6648cb6fc8560
+-vendor/lib/libthermalclient.so|c3aecc7610e8f5775a6f6af2ff7790bef74380a1
+-vendor/lib64/libthermalclient.so|84072e150722cc668320f07a75cb8695ce1a79b0
+vendor/lib64/libthermalioctl.so|883cb0b55fc2a0354a8c7f21139767e6a413b4ac
+
+# VNDK
+vendor/lib/vndk/libbinder.so|094d702305c39f3988b9f586d47d4e8b10595ceb
+
+# Wifi - from jasmine
+vendor/bin/cnss-daemon
