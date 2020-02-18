@@ -21,3 +21,6 @@ export DEVICE_COMMON=sdm660-common
 export DEVICE_SPECIFIED_COMMON_DEVICE="jasmine_sprout wayne"
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
+
+patchelf --replace-needed libMiWatermark.so libMiWatermark_shim.so ./../../../vendor/$VENDOR/$DEVICE_COMMON/proprietary/vendor/lib/hw/camera.sdm660.so
+patchelf --add-needed libcamera_sdm660_shim.so ./../../../vendor/$VENDOR/$DEVICE_COMMON/proprietary/vendor/lib/hw/camera.sdm660.so
