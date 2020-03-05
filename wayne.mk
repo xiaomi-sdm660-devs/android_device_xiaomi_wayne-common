@@ -26,7 +26,8 @@ WAYNE_PATH := device/xiaomi/wayne-common
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(WAYNE_PATH)/overlay
+    $(WAYNE_PATH)/overlay \
+    $(WAYNE_PATH)/overlay-lineage
 
 # Inherit from sdm660-common
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
